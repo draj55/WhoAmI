@@ -59,8 +59,37 @@ data=[
         "billAmmount":200
     },
 ]
+#  keys = ['FirstName', 'LastName', 'SSID']
+ 
+# name1 = ['Michael', 'Kirk', '224567']
+# name2 = ['Linda', 'Matthew', '123456']
+ 
+# dictList = []
+# dictList.append(dict(zip(keys, name1)))
+# dictList.append(dict(zip(keys, name2)))
+ 
+# print dictList
+# for item in dictList:
+#     print ' '.join([item[key] for key in keys])
 if __name__=="__main__":
-    p2=Docter("raj",data)
-    p2.findPatientWithMaximumAge()
-    p2.sortPatientByBillAccount()
+    keys=["code","name","age","docterName","billAmmount"]
+    values=[]
+    values2=[]
+    for i in range(2):
+        for j in range(5):
+            values.append((input("")))
+            values2.append((input("")))
+   # value=[5,"anupama",18,"Dr.Anusha",200]
+    dictList=[]
+    dictList.append(dict(zip(keys,values)))
+    dictList.append(dict(zip(keys,values2)))
+    print(dictList)
+    print("=======================")
+    for item in dictList:
+        ' '.join([item[key] for key in keys])
+  
+  
+   # p2=Docter("raj",data)
+   # p2.findPatientWithMaximumAge()
+   # p2.sortPatientByBillAccount()
 
